@@ -3,16 +3,16 @@
 {
   packages = with pkgs; [
     bun
-    nodejs_21
+    nodejs
 
     (writeScriptBin "helpme" ''
       __usage="
-      👋 Welcome to Next Boilerplate development environment. 🚀
+      👋 Welcome to Berry Labs Development Environment. 🚀
       If you see this message, it means your are inside the Nix shell ❄️.
 
       [Info]===============================================================>
 
-      NodeJS Version: v${nodejs_21.version}
+      NodeJS Version: v${nodejs.version}
       Bun Version: v${bun.version}
       Typescript Version: v${typescript.version} 
 
@@ -22,14 +22,10 @@
         - dev:              start development server
         - story-dev:        start storybook in development
         - story-build:      build storybook
-        - db-gen:           generate drizzle migration
-        - db-push:          push migration
-        - db-seed:          seed database
-        - db-studio:        open drizzle studio
         - helpme:           show this messages
 
       Repository:
-        - https://github.com/maulanasdqn/next-boilerplate
+        - https://github.com/maulanasdqn/berrylabs-slicing
       [Info]===============================================================>
       "
       echo "$__usage"
@@ -53,22 +49,6 @@
 
     (writeScriptBin "story-build" ''
       bun story:build
-    '')
-
-    (writeScriptBin "db-generate" ''
-      bun db:gen
-    '')
-
-    (writeScriptBin "db-push" ''
-      bun db:push
-    '')
-
-    (writeScriptBin "db-seed" ''
-      bun db:seed
-    '')
-
-    (writeScriptBin "db-studio" ''
-      bun db:studio
     '')
 
   ];

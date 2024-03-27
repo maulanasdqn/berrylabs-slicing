@@ -2,8 +2,9 @@ export const colors = {
   white: "#ffffff",
   black: "#000000",
   slate: "#E4E5E7",
+
   primary: {
-    DEFAULT: "#009647",
+    DEFAULT: "#5459D8",
     50: "#edfff5",
     100: "#d6ffe9",
     200: "#afffd4",
@@ -17,23 +18,8 @@ export const colors = {
     950: "#00361a",
   },
 
-  "primary-2": {
-    DEFAULT: "#175349",
-    50: "#f1fcf8",
-    100: "#d0f7eb",
-    200: "#a2edd7",
-    300: "#6bddbf",
-    400: "#3cc5a5",
-    500: "#23a98c",
-    600: "#198873",
-    700: "#186d5d",
-    800: "#175349",
-    900: "#184940",
-    950: "#082b26",
-  },
-
   secondary: {
-    DEFAULT: "#f8bf02",
+    DEFAULT: "#917B7D",
     50: "#fffeea",
     100: "#fffcc5",
     200: "#fff986",
@@ -123,7 +109,7 @@ export const colors = {
   },
 
   grey: {
-    DEFAULT: "#6d6d6d",
+    DEFAULT: "#F9FAFB",
     50: "#f6f6f6",
     100: "#e7e7e7",
     200: "#d1d1d1",

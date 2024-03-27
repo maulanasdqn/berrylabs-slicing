@@ -1,6 +1,4 @@
-# Next Boilerplate
-
-> Introduction to Next.js boilerplate
+# Berry Labs Landing Page
 
 ## Table of Contents
 
@@ -16,7 +14,7 @@ Clone the repository and run `bun install`
 bun install
 ```
 
-## Usage
+## Usage Development
 
 Running with Development Mode
 
@@ -36,16 +34,30 @@ Running with Production Mode
 bun run start
 ```
 
-Migrate Database
+## Usage Storybook
+
+Running Storybook with Development Mode
 
 ```bash
-bun run db:push
+bun run story:dev
 ```
 
-Seeding the Database
+Building Storybook with Production Mode
 
 ```bash
-bun run db:seed
+bun run story:build
 ```
 
-## Examples
+## Usage Unit Test
+
+Running Unit Test
+
+```bash
+bun run test
+```
+
+Running Unit Test with Coverage Mode
+
+```bash
+bun run test:coverage
+```

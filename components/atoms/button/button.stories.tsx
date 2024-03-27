@@ -5,10 +5,10 @@ import { Button } from "./index";
 const meta: Meta<typeof Button> = {
   component: Button,
   tags: ["autodocs"],
-  title: "components/atoms/Button",
+  title: "Components/Atoms/Button",
   argTypes: {
     variant: {
-      options: ["primary", "secondary", "error", "warning", "success", "info"],
+      options: ["primary", "error", "warning", "success", "info"],
       control: { type: "radio" },
     },
     size: {
@@ -39,15 +39,6 @@ export const Primary: Story = {
     variant: "primary",
     size: "sm",
     children: "Button Primary",
-    state: "default",
-  },
-};
-
-export const Secondary: Story = {
-  args: {
-    variant: "secondary",
-    size: "sm",
-    children: "Button Secondary",
     state: "default",
   },
 };
