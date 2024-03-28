@@ -7,7 +7,7 @@ export const Footer: FC = (): ReactElement => {
   return (
     <footer
       data-testid="footer"
-      className="flex p-6 justify-between items-start w-full bg-grey gap-x-10"
+      className="flex p-6 justify-between items-start w-full max-w-6xl bg-grey gap-x-10"
     >
       <div className="flex flex-col gap-y-6 w-3/4">
         <figure className="flex items-center gap-x-2">

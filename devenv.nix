@@ -4,6 +4,7 @@
   packages = with pkgs; [
     bun
     nodejs
+    stdenv.cc.cc.lib
 
     (writeScriptBin "helpme" ''
       __usage="

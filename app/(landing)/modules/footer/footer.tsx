@@ -3,7 +3,7 @@ import { FC } from "react";
 
 export const FooterSection: FC = () => {
   return (
-    <section className="w-full h-auto absolute bottom-0">
+    <section className="flex w-full h-auto items-center justify-center bg-grey">
       <Footer />
     </section>
   );

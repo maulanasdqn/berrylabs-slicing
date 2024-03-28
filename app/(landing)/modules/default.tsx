@@ -1,16 +1,14 @@
-import { FC, Fragment, ReactElement } from "react";
-import { HeaderSection } from "./header-section";
-import { FooterSection } from "./footer-section";
-import { HeroSection } from "./hero-section";
+import { FC, ReactElement } from "react";
+import { HeroSection } from "./hero";
+import { CTASection } from "./call-to-action";
+import { PricingSection } from "./pricing";
 
 export const LandingModule: FC = (): ReactElement => {
   return (
-    <Fragment>
-      <HeaderSection />
-      <main className="flex relative items-center flex-col min-h-screen h-full">
-        <HeroSection />
-        <FooterSection />
-      </main>
-    </Fragment>
+    <section className="flex max-w-[1440px] w-full relative items-center flex-col h-auto px-8">
+      <HeroSection />
+      <PricingSection />
+      <CTASection />
+    </section>
   );
 };

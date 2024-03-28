@@ -18,7 +18,7 @@ export const Button: FC<TButton> = ({
 
     {
       "rounded-lg ": rounded,
-      "rounded-sm ": !rounded,
+      "rounded-[4px] ": !rounded,
     },
 
     {

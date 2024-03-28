@@ -25,11 +25,16 @@ export const Navbar: FC<TNavbar> = (props): ReactElement => {
             <li key={key} className="p-3">
               {nav?.childrens ? (
                 <div className="flex items-center gap-x-2 cursor-pointer">
-                  <span className="text-md font-sans">{nav.text}</span>
+                  <span className="text-md font-medium font-sans">
+                    {nav.text}
+                  </span>
                   <Icon icon="fluent:chevron-down-16-filled" />
                 </div>
               ) : (
-                <Link className="text-md font-sans" href={nav.path!}>
+                <Link
+                  className="text-md font-medium font-sans"
+                  href={nav.path!}
+                >
                   {nav.text}
                 </Link>
               )}
@@ -37,7 +42,6 @@ export const Navbar: FC<TNavbar> = (props): ReactElement => {
           ))}
         </ul>
       </div>
-
       <div className="flex items-center gap-x-8 w-full justify-end">
         <Button size="md">Get Started</Button>
       </div>

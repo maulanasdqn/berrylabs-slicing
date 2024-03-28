@@ -1,4 +1,4 @@
-import { Footer, Navbar } from "@/components/molecules";
+import { Navbar } from "@/components/molecules";
 import { TNavbarItem } from "@/components/molecules/navbar/navbar.type";
 import { FC, ReactElement } from "react";
 
@@ -32,7 +32,7 @@ export const HeaderSection: FC = (): ReactElement => {
   ];
 
   return (
-    <header className="w-full">
+    <header className="w-full h-auto bg-white max-w-[1440px] px-8">
       <Navbar items={navbarItem} />
     </header>
   );
