@@ -7,9 +7,9 @@ export const Footer: FC = (): ReactElement => {
   return (
     <footer
       data-testid="footer"
-      className="flex p-6 justify-between items-start w-full max-w-6xl bg-grey gap-x-10"
+      className="flex md:flex-row flex-col p-6 justify-between items-start w-full max-w-6xl bg-grey gap-x-10"
     >
-      <div className="flex flex-col gap-y-6 w-3/4">
+      <div className="flex flex-col gap-y-6 md:w-3/4 w-full">
         <figure className="flex items-center gap-x-2">
           <Image src="/logo.svg" width={58} height={51} alt="Logo Navbar" />
           <figcaption className="font-medium text-lg">BerryLabs.io</figcaption>
@@ -29,8 +29,8 @@ export const Footer: FC = (): ReactElement => {
         </div>
       </div>
 
-      <div className="w-full flex justify-start px-8">
-        <div className="w-full flex gap-x-8 justify-between">
+      <div className="w-full flex md:flex-row flex-col justify-start px-4 md:px-8 mt-6 md:mt-0">
+        <div className="w-full flex md:flex-row flex-col gap-y-4 md:gap-x-8 justify-between">
           <div className="flex flex-col gap-y-4">
             <h1 className="text-black font-bold font-sans text-md mb-4">
               Pages

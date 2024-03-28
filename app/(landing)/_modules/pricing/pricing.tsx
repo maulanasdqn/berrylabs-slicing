@@ -7,9 +7,9 @@ export const PricingSection: FC = (): ReactElement => {
   return (
     <section
       data-testid="pricing"
-      className="flex items-center h-auto py-6 justify-start w-full px-10"
+      className="flex md:flex-row flex-col md:items-center h-auto py-6 justify-start w-full md:px-10"
     >
-      <div className="flex flex-col gap-y-12 w-1/3 mb-10">
+      <div className="md:flex hidden flex-col gap-y-12 w-1/3 mb-10">
         <div className="flex flex-col gap-y-4">
           <h1 className="font-semibold">Core Features</h1>
           <h2 className="text-md">Files Included</h2>
@@ -26,8 +26,8 @@ export const PricingSection: FC = (): ReactElement => {
         </div>
       </div>
 
-      <div className="flex w-full mb-28">
-        <div className="flex flex-col border border-grey-50 rounded-t-[10px] w-[257px]">
+      <div className="grid md:grid-cols-4 grid-cols-1 gap-3 items-center md:items-start md:gap-0 w-full mb-28">
+        <div className="flex flex-col border border-grey-50 rounded-t-[10px] md:w-[257px] w-full">
           <div className="flex flex-col gap-y-4 bg-grey-50 items-center justify-center rounded-t-[10px] p-6">
             <h1 className="text-black text-3xl">Free</h1>
             <h2 className="text-grey-400 text-center text-md">
@@ -36,14 +36,14 @@ export const PricingSection: FC = (): ReactElement => {
             <span className="text-black font-bold text-3xl">IDR 0</span>
           </div>
 
-          <div className="flex flex-col gap-y-8 bg-white w-[257px] items-center justify-center p-6">
+          <div className="flex flex-col gap-y-8 bg-white md:w-[257px] w-full items-center justify-center p-6">
             <div className="flex items-center gap-x-1">
               <h2 className="text-black text-center text-md">100 Files</h2>
               <Icon icon="ph:question-light" color="#5459D8" />
             </div>
           </div>
 
-          <div className="flex flex-col gap-y-5 bg-grey-50 w-[257px] items-center justify-center rounded-b-[10px] p-6">
+          <div className="flex flex-col gap-y-5 bg-grey-50 md:w-[257px] w-full items-center justify-center rounded-b-[10px] p-6">
             <div className="flex items-center gap-x-1">
               <h2 className="text-black text-center text-md">100</h2>
               <Icon icon="ph:question-light" color="#5459D8" />
@@ -75,7 +75,7 @@ export const PricingSection: FC = (): ReactElement => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-white  w-[257px]">
+        <div className="flex flex-col bg-white md:w-[257px] w-full">
           <div className="flex flex-col gap-y-4 bg-white items-center justify-center rounded-t-[10px] p-6">
             <h1 className="text-black text-3xl">Basic</h1>
             <h2 className="text-grey-400 text-center text-md">
@@ -84,14 +84,14 @@ export const PricingSection: FC = (): ReactElement => {
             <span className="text-black font-bold text-3xl">IDR 299,000</span>
           </div>
 
-          <div className="flex flex-col gap-y-8 bg-grey-50 w-[257px] items-center justify-center p-6">
+          <div className="flex flex-col gap-y-8 bg-grey-50 md:w-[257px] w-full items-center justify-center p-6">
             <div className="flex items-center gap-x-1">
               <h2 className="text-black text-center text-md">250 Files</h2>
               <Icon icon="ph:question-light" color="#5459D8" />
             </div>
           </div>
 
-          <div className="flex flex-col gap-y-5 bg-white w-[257px] items-center justify-center rounded-b-[10px] p-6">
+          <div className="flex flex-col gap-y-5 bg-white md:w-[257px] w-full items-center justify-center rounded-b-[10px] p-6">
             <div className="flex items-center gap-x-1">
               <h2 className="text-black text-center text-md">100</h2>
               <Icon icon="ph:question-light" color="#5459D8" />
@@ -123,8 +123,8 @@ export const PricingSection: FC = (): ReactElement => {
           </div>
         </div>
 
-        <div className="flex flex-col relative border-2 border-primary rounded-[10px] w-[257px]">
-          <Button className="absolute bg-primary top-[-20px] left-[80px] text-white rounded-full w-fit p-2">
+        <div className="flex flex-col relative border-2 border-primary rounded-[10px] md:w-[257px] w-full">
+          <Button className="absolute bg-primary top-[-20px] md:left-[80px] left-[130px] text-white rounded-full w-fit p-2">
             Best Seller
           </Button>
 
@@ -173,7 +173,7 @@ export const PricingSection: FC = (): ReactElement => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-white w-[257px]">
+        <div className="flex flex-col bg-white md:w-[257px] w-full">
           <div className="flex flex-col gap-y-4 bg-white items-center justify-center rounded-t-[10px] p-6">
             <h1 className="text-black text-3xl">Premium</h1>
             <h2 className="text-grey-400 text-center text-sm mb-[5px]">
@@ -182,14 +182,14 @@ export const PricingSection: FC = (): ReactElement => {
             <span className="text-black font-bold text-3xl">IDR 999,000</span>
           </div>
 
-          <div className="flex flex-col gap-y-8 bg-grey-50 w-[257px] items-center justify-center p-6">
+          <div className="flex flex-col gap-y-8 bg-grey-50 w-full md:w-[257px] items-center justify-center p-6">
             <div className="flex items-center gap-x-1">
               <h2 className="text-black text-center text-md">1000 Files</h2>
               <Icon icon="ph:question-light" color="#5459D8" />
             </div>
           </div>
 
-          <div className="flex flex-col gap-y-5 bg-white w-[257px] items-center justify-center rounded-b-[10px] p-6">
+          <div className="flex flex-col gap-y-5 bg-white md:w-[257px] w-full items-center justify-center rounded-b-[10px] p-6">
             <div className="flex items-center gap-x-1">
               <h2 className="text-black text-center text-md">100</h2>
               <Icon icon="ph:question-light" color="#5459D8" />

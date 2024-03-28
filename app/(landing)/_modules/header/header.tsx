@@ -32,7 +32,7 @@ export const HeaderSection: FC = (): ReactElement => {
   ];
 
   return (
-    <header className="w-full h-auto bg-white max-w-[1440px] px-8">
+    <header className="w-full h-auto bg-white max-w-[1440px] px-4 md:px-8">
       <Navbar items={navbarItem} />
     </header>
   );

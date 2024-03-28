@@ -20,7 +20,7 @@ export const Navbar: FC<TNavbar> = (props): ReactElement => {
           </figcaption>
         </figure>
 
-        <ul className="flex items-center w-full gap-x-6">
+        <ul className="md:flex hidden items-center w-full gap-x-6">
           {props?.items?.map((nav, key) => (
             <li key={key} className="p-3">
               {nav?.childrens ? (
@@ -42,8 +42,12 @@ export const Navbar: FC<TNavbar> = (props): ReactElement => {
           ))}
         </ul>
       </div>
-      <div className="flex items-center gap-x-8 w-full justify-end">
+      <div className="md:flex hidden items-center gap-x-8 w-full justify-end">
         <Button size="md">Get Started</Button>
+      </div>
+
+      <div className="flex md:hidden items-center gap-x-8 w-full justify-end">
+        <Icon icon="mingcute:menu-fill" width="40px" color="black" />
       </div>
     </nav>
   );
