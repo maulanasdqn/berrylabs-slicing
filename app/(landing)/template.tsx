@@ -1,6 +1,6 @@
 import { FC, PropsWithChildren, ReactElement } from "react";
-import { FooterSection } from "./modules/footer";
-import { HeaderSection } from "./modules/header";
+import { FooterSection } from "./_modules/footer";
+import { HeaderSection } from "./_modules/header";
 
 const LandingTemplate: FC<PropsWithChildren> = ({ children }): ReactElement => {
   return (

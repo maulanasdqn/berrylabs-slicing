@@ -1,5 +1,5 @@
 import { FC, ReactElement } from "react";
-import { LandingModule } from "./modules/default";
+import { LandingModule } from "./_modules/default";
 
 const LandingPage: FC = (): ReactElement => {
   return <LandingModule />;
