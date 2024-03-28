@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import { HeroSection } from "./hero";
 
-describe("Test hero Component", () => {
+describe("Test Hero Section", () => {
   it("Should render correctly", () => {
     const { getByTestId } = render(<HeroSection />);
     expect(getByTestId("hero")).toBeInTheDocument();

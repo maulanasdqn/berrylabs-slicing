@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import { CTASection } from "./call-to-action";
 
-describe("Test Call To Action Component", () => {
+describe("Test Call To Action Section", () => {
   it("Should render correctly", () => {
     const { getByTestId } = render(<CTASection />);
     expect(getByTestId("cta")).toBeInTheDocument();

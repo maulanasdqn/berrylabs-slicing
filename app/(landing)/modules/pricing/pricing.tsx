@@ -5,7 +5,10 @@ import { FC, ReactElement } from "react";
 
 export const PricingSection: FC = (): ReactElement => {
   return (
-    <section className="flex items-center h-auto py-6 justify-start w-full px-10">
+    <section
+      data-testid="pricing"
+      className="flex items-center h-auto py-6 justify-start w-full px-10"
+    >
       <div className="flex flex-col gap-y-12 w-1/3 mb-10">
         <div className="flex flex-col gap-y-4">
           <h1 className="font-semibold">Core Features</h1>
