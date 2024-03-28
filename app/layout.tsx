@@ -14,6 +14,11 @@ export const metadata: Metadata = {
   description:
     "Automate Without Breaking the Bank: Affordable Solutions for Every Business.",
   keywords: ["Berry Labs", "Bank", "Solutions", "Affordable"],
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
 };
 
 const RootLayout: FC<Readonly<PropsWithChildren>> = ({ children }) => {
